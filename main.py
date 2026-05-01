@@ -42,6 +42,21 @@ def all_facts():
     html += "</ul><br><a href='/'>Go back</a>"
 
     return html
+
+@app.route("/secret")
+def secret():
+    return '''
+    <h1 style="color:#ff69b4; font-family: Comic Sans MS;">
+         You found the secret! 
+    </h1>
+
+    <p>ok... how did you even get here? </p>
+
+    <img src="https://img1.picmix.com/output/stamp/normal/2/1/0/7/2587012_19544.png" width="120">
+
+    <br><br>
+    <a href="/">go back</a>
+    '''   
     
 
 app.run(debug=True)
